@@ -8,7 +8,8 @@ import org.springframework.data.jpa.repository.Query;
 import java.time.LocalDateTime;
 
 public interface ConsultaRepository extends JpaRepository<Consulta, Long> {
-    boolean existsByMedicoIdAndData(Long idMedico, @NotNull LocalDateTime data);
 
-    boolean existsByPacienteIdAndDataBetween(@NotNull Long aLong, LocalDateTime primeiroHorario, LocalDateTime ultimoHorario);
+    boolean existsByMedicoIdAndDataAndAtivoIsTrue(Long idMedico, @NotNull LocalDateTime data);
+
+    boolean existsByPacienteIdAndDataBetweenAndAtivoIsTrue(@NotNull Long aLong, LocalDateTime primeiroHorario, LocalDateTime ultimoHorario);
 }

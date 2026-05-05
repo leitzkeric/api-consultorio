@@ -1,6 +1,5 @@
-package medico.api.domain.consulta.validacoes;
+package medico.api.domain.consulta.validacoes.agendamento;
 
-import medico.api.domain.ValidacaoException;
 import medico.api.domain.consulta.DadosAgendamentoConsulta;
 
 public interface ValidadorAgendamentoDeConsulta {

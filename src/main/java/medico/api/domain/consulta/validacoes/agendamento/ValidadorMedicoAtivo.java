@@ -1,4 +1,4 @@
-package medico.api.domain.consulta.validacoes;
+package medico.api.domain.consulta.validacoes.agendamento;
 
 import medico.api.domain.ValidacaoException;
 import medico.api.domain.consulta.DadosAgendamentoConsulta;
@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ValidadorMedicoAtivo implements ValidadorAgendamentoDeConsulta{
+public class ValidadorMedicoAtivo implements ValidadorAgendamentoDeConsulta {
 
     @Autowired
     private MedicoRepository repository;
