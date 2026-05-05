@@ -35,8 +35,12 @@ public class Consulta {
     @Enumerated(EnumType.STRING)
     private MotivoCancelamento motivoCancelamento;
 
+    private Boolean ativo;
+
 
     public void cancelar(MotivoCancelamento motivo) {
+
         this.motivoCancelamento = motivo;
+        this.ativo = false;
     }
 }

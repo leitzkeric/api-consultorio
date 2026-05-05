@@ -1,4 +1,4 @@
-package medico.api.domain.consulta.validacoes;
+package medico.api.domain.consulta.validacoes.agendamento;
 
 import medico.api.domain.ValidacaoException;
 import medico.api.domain.consulta.DadosAgendamentoConsulta;
@@ -8,7 +8,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 @Component
-public class ValidadorHorarioAntecedencia implements ValidadorAgendamentoDeConsulta{
+public class ValidadorHorarioAntecedencia implements ValidadorAgendamentoDeConsulta {
 
     public void validar (DadosAgendamentoConsulta dados)  {
         var dataConsulta = dados.data();
